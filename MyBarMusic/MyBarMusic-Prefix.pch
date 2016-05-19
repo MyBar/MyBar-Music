@@ -1,0 +1,22 @@
+//
+//  MyBarMusic-Prefix.pch
+//  MyBarMusic
+//
+//  Created by lijingui2010 on 16/5/19.
+//  Copyright © 2016年 MyBar. All rights reserved.
+//
+
+#ifndef MyBarMusic_Prefix_pch
+#define MyBarMusic_Prefix_pch
+
+#import "UIView+Extension.h"
+
+#define MBColor(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0];
+
+#ifdef DEBUG
+#define MBLog(...) NSLog(__VA_ARGS__)
+#else
+#define MBLog(...)
+#endif
+
+#endif /* MyBarMusic_Prefix_pch */

@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D615ED81CEDED82009B7DE7 /* MBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D615ED71CEDED82009B7DE7 /* MBMainViewController.m */; };
+		8D615EDC1CEDEE4A009B7DE7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D615EDB1CEDEE4A009B7DE7 /* UIView+Extension.m */; };
+		8D615EE31CEDEEEA009B7DE7 /* MBNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D615EE01CEDEEEA009B7DE7 /* MBNewFeatureViewController.m */; };
+		8DA2A6911CEDD95C00FB0BC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2A6901CEDD95C00FB0BC7 /* main.m */; };
+		8DA2A6941CEDD95C00FB0BC7 /* MBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2A6931CEDD95C00FB0BC7 /* MBAppDelegate.m */; };
+		8DA2A69A1CEDD95C00FB0BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2A6981CEDD95C00FB0BC7 /* Main.storyboard */; };
+		8DA2A69C1CEDD95C00FB0BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2A69B1CEDD95C00FB0BC7 /* Assets.xcassets */; };
+		8DA2A6AA1CEDD95C00FB0BC7 /* MyBarMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2A6A91CEDD95C00FB0BC7 /* MyBarMusicTests.m */; };
+		8DA2A6B51CEDD95C00FB0BC7 /* MyBarMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2A6B41CEDD95C00FB0BC7 /* MyBarMusicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DA2A6A61CEDD95C00FB0BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA2A6841CEDD95B00FB0BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DA2A68B1CEDD95B00FB0BC7;
+			remoteInfo = MyBarMusic;
+		};
+		8DA2A6B11CEDD95C00FB0BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA2A6841CEDD95B00FB0BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DA2A68B1CEDD95B00FB0BC7;
+			remoteInfo = MyBarMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D615ED61CEDED82009B7DE7 /* MBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMainViewController.h; sourceTree = "<group>"; };
+		8D615ED71CEDED82009B7DE7 /* MBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMainViewController.m; sourceTree = "<group>"; };
+		8D615EDA1CEDEE4A009B7DE7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8D615EDB1CEDEE4A009B7DE7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8D615EDF1CEDEEEA009B7DE7 /* MBNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNewFeatureViewController.h; sourceTree = "<group>"; };
+		8D615EE01CEDEEEA009B7DE7 /* MBNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNewFeatureViewController.m; sourceTree = "<group>"; };
+		8DA2A68C1CEDD95B00FB0BC7 /* MyBarMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBarMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA2A6901CEDD95C00FB0BC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DA2A6921CEDD95C00FB0BC7 /* MBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAppDelegate.h; sourceTree = "<group>"; };
+		8DA2A6931CEDD95C00FB0BC7 /* MBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAppDelegate.m; sourceTree = "<group>"; };
+		8DA2A6991CEDD95C00FB0BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DA2A69B1CEDD95C00FB0BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DA2A6A01CEDD95C00FB0BC7 /* MyBarMusic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyBarMusic-Info.plist"; sourceTree = "<group>"; };
+		8DA2A6A51CEDD95C00FB0BC7 /* MyBarMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBarMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA2A6A91CEDD95C00FB0BC7 /* MyBarMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBarMusicTests.m; sourceTree = "<group>"; };
+		8DA2A6AB1CEDD95C00FB0BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA2A6B01CEDD95C00FB0BC7 /* MyBarMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBarMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA2A6B41CEDD95C00FB0BC7 /* MyBarMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBarMusicUITests.m; sourceTree = "<group>"; };
+		8DA2A6B61CEDD95C00FB0BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA2A6C21CEDDDB100FB0BC7 /* MyBarMusic-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyBarMusic-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DA2A6891CEDD95B00FB0BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA2A6A21CEDD95C00FB0BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA2A6AD1CEDD95C00FB0BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D615ED01CEDED5A009B7DE7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D615EDD1CEDEEEA009B7DE7 /* NewFeature */,
+				8D615ED11CEDED5A009B7DE7 /* Main */,
+				8D615ED51CEDED5A009B7DE7 /* Vender */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8D615ED11CEDED5A009B7DE7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8D615ED91CEDEE4A009B7DE7 /* Category */,
+				8D615ED21CEDED5A009B7DE7 /* Controller */,
+				8D615ED31CEDED5A009B7DE7 /* Model */,
+				8D615ED41CEDED5A009B7DE7 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8D615ED21CEDED5A009B7DE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D615ED61CEDED82009B7DE7 /* MBMainViewController.h */,
+				8D615ED71CEDED82009B7DE7 /* MBMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D615ED31CEDED5A009B7DE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D615ED41CEDED5A009B7DE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D615ED51CEDED5A009B7DE7 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		8D615ED91CEDEE4A009B7DE7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8D615EDA1CEDEE4A009B7DE7 /* UIView+Extension.h */,
+				8D615EDB1CEDEE4A009B7DE7 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8D615EDD1CEDEEEA009B7DE7 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				8D615EDE1CEDEEEA009B7DE7 /* Controller */,
+				8D615EE11CEDEEEA009B7DE7 /* Model */,
+				8D615EE21CEDEEEA009B7DE7 /* View */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		8D615EDE1CEDEEEA009B7DE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D615EDF1CEDEEEA009B7DE7 /* MBNewFeatureViewController.h */,
+				8D615EE01CEDEEEA009B7DE7 /* MBNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D615EE11CEDEEEA009B7DE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D615EE21CEDEEEA009B7DE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DA2A6831CEDD95B00FB0BC7 = {
+			isa = PBXGroup;
+			children = (
+				8DA2A68E1CEDD95C00FB0BC7 /* MyBarMusic */,
+				8DA2A6A81CEDD95C00FB0BC7 /* MyBarMusicTests */,
+				8DA2A6B31CEDD95C00FB0BC7 /* MyBarMusicUITests */,
+				8DA2A68D1CEDD95B00FB0BC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DA2A68D1CEDD95B00FB0BC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DA2A68C1CEDD95B00FB0BC7 /* MyBarMusic.app */,
+				8DA2A6A51CEDD95C00FB0BC7 /* MyBarMusicTests.xctest */,
+				8DA2A6B01CEDD95C00FB0BC7 /* MyBarMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DA2A68E1CEDD95C00FB0BC7 /* MyBarMusic */ = {
+			isa = PBXGroup;
+			children = (
+				8D615ED01CEDED5A009B7DE7 /* Classes */,
+				8DA2A6921CEDD95C00FB0BC7 /* MBAppDelegate.h */,
+				8DA2A6931CEDD95C00FB0BC7 /* MBAppDelegate.m */,
+				8DA2A6981CEDD95C00FB0BC7 /* Main.storyboard */,
+				8DA2A69B1CEDD95C00FB0BC7 /* Assets.xcassets */,
+				8DA2A68F1CEDD95C00FB0BC7 /* Supporting Files */,
+			);
+			path = MyBarMusic;
+			sourceTree = "<group>";
+		};
+		8DA2A68F1CEDD95C00FB0BC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DA2A6A01CEDD95C00FB0BC7 /* MyBarMusic-Info.plist */,
+				8DA2A6901CEDD95C00FB0BC7 /* main.m */,
+				8DA2A6C21CEDDDB100FB0BC7 /* MyBarMusic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DA2A6A81CEDD95C00FB0BC7 /* MyBarMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DA2A6A91CEDD95C00FB0BC7 /* MyBarMusicTests.m */,
+				8DA2A6AB1CEDD95C00FB0BC7 /* Info.plist */,
+			);
+			path = MyBarMusicTests;
+			sourceTree = "<group>";
+		};
+		8DA2A6B31CEDD95C00FB0BC7 /* MyBarMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DA2A6B41CEDD95C00FB0BC7 /* MyBarMusicUITests.m */,
+				8DA2A6B61CEDD95C00FB0BC7 /* Info.plist */,
+			);
+			path = MyBarMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DA2A68B1CEDD95B00FB0BC7 /* MyBarMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA2A6B91CEDD95C00FB0BC7 /* Build configuration list for PBXNativeTarget "MyBarMusic" */;
+			buildPhases = (
+				8DA2A6881CEDD95B00FB0BC7 /* Sources */,
+				8DA2A6891CEDD95B00FB0BC7 /* Frameworks */,
+				8DA2A68A1CEDD95B00FB0BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBarMusic;
+			productName = MyBarMusic;
+			productReference = 8DA2A68C1CEDD95B00FB0BC7 /* MyBarMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DA2A6A41CEDD95C00FB0BC7 /* MyBarMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA2A6BC1CEDD95C00FB0BC7 /* Build configuration list for PBXNativeTarget "MyBarMusicTests" */;
+			buildPhases = (
+				8DA2A6A11CEDD95C00FB0BC7 /* Sources */,
+				8DA2A6A21CEDD95C00FB0BC7 /* Frameworks */,
+				8DA2A6A31CEDD95C00FB0BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DA2A6A71CEDD95C00FB0BC7 /* PBXTargetDependency */,
+			);
+			name = MyBarMusicTests;
+			productName = MyBarMusicTests;
+			productReference = 8DA2A6A51CEDD95C00FB0BC7 /* MyBarMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DA2A6AF1CEDD95C00FB0BC7 /* MyBarMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA2A6BF1CEDD95C00FB0BC7 /* Build configuration list for PBXNativeTarget "MyBarMusicUITests" */;
+			buildPhases = (
+				8DA2A6AC1CEDD95C00FB0BC7 /* Sources */,
+				8DA2A6AD1CEDD95C00FB0BC7 /* Frameworks */,
+				8DA2A6AE1CEDD95C00FB0BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DA2A6B21CEDD95C00FB0BC7 /* PBXTargetDependency */,
+			);
+			name = MyBarMusicUITests;
+			productName = MyBarMusicUITests;
+			productReference = 8DA2A6B01CEDD95C00FB0BC7 /* MyBarMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DA2A6841CEDD95B00FB0BC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MyBar;
+				TargetAttributes = {
+					8DA2A68B1CEDD95B00FB0BC7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VQ2W6JQN9Q;
+					};
+					8DA2A6A41CEDD95C00FB0BC7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VQ2W6JQN9Q;
+						TestTargetID = 8DA2A68B1CEDD95B00FB0BC7;
+					};
+					8DA2A6AF1CEDD95C00FB0BC7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VQ2W6JQN9Q;
+						TestTargetID = 8DA2A68B1CEDD95B00FB0BC7;
+					};
+				};
+			};
+			buildConfigurationList = 8DA2A6871CEDD95B00FB0BC7 /* Build configuration list for PBXProject "MyBarMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DA2A6831CEDD95B00FB0BC7;
+			productRefGroup = 8DA2A68D1CEDD95B00FB0BC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DA2A68B1CEDD95B00FB0BC7 /* MyBarMusic */,
+				8DA2A6A41CEDD95C00FB0BC7 /* MyBarMusicTests */,
+				8DA2A6AF1CEDD95C00FB0BC7 /* MyBarMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DA2A68A1CEDD95B00FB0BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA2A69C1CEDD95C00FB0BC7 /* Assets.xcassets in Resources */,
+				8DA2A69A1CEDD95C00FB0BC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA2A6A31CEDD95C00FB0BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA2A6AE1CEDD95C00FB0BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DA2A6881CEDD95B00FB0BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA2A6941CEDD95C00FB0BC7 /* MBAppDelegate.m in Sources */,
+				8DA2A6911CEDD95C00FB0BC7 /* main.m in Sources */,
+				8D615EDC1CEDEE4A009B7DE7 /* UIView+Extension.m in Sources */,
+				8D615EE31CEDEEEA009B7DE7 /* MBNewFeatureViewController.m in Sources */,
+				8D615ED81CEDED82009B7DE7 /* MBMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA2A6A11CEDD95C00FB0BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA2A6AA1CEDD95C00FB0BC7 /* MyBarMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA2A6AC1CEDD95C00FB0BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA2A6B51CEDD95C00FB0BC7 /* MyBarMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DA2A6A71CEDD95C00FB0BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DA2A68B1CEDD95B00FB0BC7 /* MyBarMusic */;
+			targetProxy = 8DA2A6A61CEDD95C00FB0BC7 /* PBXContainerItemProxy */;
+		};
+		8DA2A6B21CEDD95C00FB0BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DA2A68B1CEDD95B00FB0BC7 /* MyBarMusic */;
+			targetProxy = 8DA2A6B11CEDD95C00FB0BC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DA2A6981CEDD95C00FB0BC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DA2A6991CEDD95C00FB0BC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DA2A6B71CEDD95C00FB0BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8DA2A6B81CEDD95C00FB0BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DA2A6BA1CEDD95C00FB0BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyBarMusic/MyBarMusic-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MyBarMusic/MyBarMusic-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyBar.MyBarMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8DA2A6BB1CEDD95C00FB0BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyBarMusic/MyBarMusic-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MyBarMusic/MyBarMusic-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyBar.MyBarMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8DA2A6BD1CEDD95C00FB0BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyBarMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyBar.MyBarMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyBarMusic.app/MyBarMusic";
+			};
+			name = Debug;
+		};
+		8DA2A6BE1CEDD95C00FB0BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyBarMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyBar.MyBarMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyBarMusic.app/MyBarMusic";
+			};
+			name = Release;
+		};
+		8DA2A6C01CEDD95C00FB0BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyBarMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyBar.MyBarMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyBarMusic;
+			};
+			name = Debug;
+		};
+		8DA2A6C11CEDD95C00FB0BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyBarMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyBar.MyBarMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyBarMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DA2A6871CEDD95B00FB0BC7 /* Build configuration list for PBXProject "MyBarMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA2A6B71CEDD95C00FB0BC7 /* Debug */,
+				8DA2A6B81CEDD95C00FB0BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DA2A6B91CEDD95C00FB0BC7 /* Build configuration list for PBXNativeTarget "MyBarMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA2A6BA1CEDD95C00FB0BC7 /* Debug */,
+				8DA2A6BB1CEDD95C00FB0BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DA2A6BC1CEDD95C00FB0BC7 /* Build configuration list for PBXNativeTarget "MyBarMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA2A6BD1CEDD95C00FB0BC7 /* Debug */,
+				8DA2A6BE1CEDD95C00FB0BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DA2A6BF1CEDD95C00FB0BC7 /* Build configuration list for PBXNativeTarget "MyBarMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA2A6C01CEDD95C00FB0BC7 /* Debug */,
+				8DA2A6C11CEDD95C00FB0BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DA2A6841CEDD95B00FB0BC7 /* Project object */;
+}
