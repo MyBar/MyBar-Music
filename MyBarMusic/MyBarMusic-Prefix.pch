@@ -11,7 +11,9 @@
 
 #import "UIView+Extension.h"
 
-#define MBColor(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0];
+#define MBColor(r, g, b) ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0])
+
+#define MBVC_BGCOLOR ([UIColor colorWithPatternImage:[UIImage imageNamed:@"vc_bg"]])
 
 #ifdef DEBUG
 #define MBLog(...) NSLog(__VA_ARGS__)

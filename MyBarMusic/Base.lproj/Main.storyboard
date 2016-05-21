@@ -1,46 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S3z-Vl-EDr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Abk-uI-hj2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="rhR-lq-npA">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MBMainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="S52-18-vHx" customClass="MBMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="L4H-ye-r9S"/>
+                        <viewControllerLayoutGuide type="bottom" id="kTM-KK-S0M"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="tdE-tn-v9R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="67y-dU-pS7"/>
+                    <navigationItem key="navigationItem" id="xcS-bj-Prc">
+                        <barButtonItem key="leftBarButtonItem" id="QBn-IT-q5Y">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jmD-jj-U7K">
+                                <rect key="frame" x="20" y="-1" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="top_tab_more"/>
+                                <state key="highlighted" image="top_tab_more_h"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="J7g-E1-vbq">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CSa-S8-B90">
+                                <rect key="frame" x="481" y="-1" width="99" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="-96" maxY="0.0"/>
+                                <state key="normal" image="search_all"/>
+                                <state key="highlighted" image="search_all_h"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srp-JY-g2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="306"/>
+            <point key="canvasLocation" x="1180" y="137"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="vum-t0-iwd">
+        <!--Main Nav VC-->
+        <scene sceneID="Ncg-oR-fqF">
             <objects>
-                <navigationController storyboardIdentifier="mainNavVC" automaticallyAdjustsScrollViewInsets="NO" id="S3z-Vl-EDr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNavVC" automaticallyAdjustsScrollViewInsets="NO" id="Abk-uI-hj2" userLabel="Main Nav VC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lt2-KD-vxy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WCk-f3-bn1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BHc-GF-LR9"/>
+                        <segue destination="S52-18-vHx" kind="relationship" relationship="rootViewController" id="fme-ot-xXX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="arC-de-3hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLH-vC-Fsl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="227"/>
+            <point key="canvasLocation" x="368" y="137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="search_all" width="45" height="45"/>
+        <image name="search_all_h" width="45" height="45"/>
+        <image name="top_tab_more" width="45" height="45"/>
+        <image name="top_tab_more_h" width="45" height="45"/>
+    </resources>
 </document>

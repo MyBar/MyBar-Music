@@ -200,10 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				8D615ED01CEDED5A009B7DE7 /* Classes */,
-				8DA2A6921CEDD95C00FB0BC7 /* MBAppDelegate.h */,
-				8DA2A6931CEDD95C00FB0BC7 /* MBAppDelegate.m */,
-				8DA2A6981CEDD95C00FB0BC7 /* Main.storyboard */,
-				8DA2A69B1CEDD95C00FB0BC7 /* Assets.xcassets */,
 				8DA2A68F1CEDD95C00FB0BC7 /* Supporting Files */,
 			);
 			path = MyBarMusic;
@@ -212,8 +208,12 @@
 		8DA2A68F1CEDD95C00FB0BC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DA2A69B1CEDD95C00FB0BC7 /* Assets.xcassets */,
+				8DA2A6981CEDD95C00FB0BC7 /* Main.storyboard */,
 				8DA2A6A01CEDD95C00FB0BC7 /* MyBarMusic-Info.plist */,
 				8DA2A6901CEDD95C00FB0BC7 /* main.m */,
+				8DA2A6921CEDD95C00FB0BC7 /* MBAppDelegate.h */,
+				8DA2A6931CEDD95C00FB0BC7 /* MBAppDelegate.m */,
 				8DA2A6C21CEDDDB100FB0BC7 /* MyBarMusic-Prefix.pch */,
 			);
 			name = "Supporting Files";
