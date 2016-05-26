@@ -19,29 +19,115 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xcS-bj-Prc">
-                        <barButtonItem key="leftBarButtonItem" id="QBn-IT-q5Y">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jmD-jj-U7K">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" width="45" id="5cu-O2-BIR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PdY-S4-A5i">
                                 <rect key="frame" x="20" y="-1" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="top_tab_more"/>
                                 <state key="highlighted" image="top_tab_more_h"/>
+                                <connections>
+                                    <action selector="tapMoreBarButtonItemAction:" destination="S52-18-vHx" eventType="touchUpInside" id="AQ5-vQ-GTL"/>
+                                </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" id="J7g-E1-vbq">
+                        <view key="titleView" contentMode="scaleToFill" id="NqE-Ol-jUt" userLabel="Title View">
+                            <rect key="frame" x="71" y="5.5" width="458" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ps-XL-Y7l">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="KiA-FL-cm7" appends="YES" id="ncQ-Y1-MHT"/>
+                                    </connections>
+                                </label>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐馆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5w-mZ-6N7">
+                                    <rect key="frame" x="154" y="0.0" width="150" height="33"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="ehK-iZ-Ffo" appends="YES" id="P1g-Wi-oNF"/>
+                                    </connections>
+                                </label>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRl-PV-YSo">
+                                    <rect key="frame" x="308" y="0.0" width="150" height="33"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="6Ib-a9-UMi" appends="YES" id="sbG-QC-56I"/>
+                                    </connections>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Z5w-mZ-6N7" firstAttribute="height" secondItem="3Ps-XL-Y7l" secondAttribute="height" id="1g5-qY-bHV"/>
+                                <constraint firstItem="Z5w-mZ-6N7" firstAttribute="leading" secondItem="3Ps-XL-Y7l" secondAttribute="trailing" constant="4" id="3g3-OP-EDy"/>
+                                <constraint firstItem="SRl-PV-YSo" firstAttribute="height" secondItem="3Ps-XL-Y7l" secondAttribute="height" id="Es0-a4-ykF"/>
+                                <constraint firstItem="SRl-PV-YSo" firstAttribute="top" secondItem="NqE-Ol-jUt" secondAttribute="top" id="Jai-W2-0px"/>
+                                <constraint firstItem="Z5w-mZ-6N7" firstAttribute="leading" secondItem="3Ps-XL-Y7l" secondAttribute="trailing" constant="4" id="K0g-dV-mmT"/>
+                                <constraint firstItem="SRl-PV-YSo" firstAttribute="leading" secondItem="Z5w-mZ-6N7" secondAttribute="trailing" constant="4" id="Zfc-vn-cjA"/>
+                                <constraint firstAttribute="bottom" secondItem="3Ps-XL-Y7l" secondAttribute="bottom" id="aJZ-y4-0gk"/>
+                                <constraint firstAttribute="trailing" secondItem="SRl-PV-YSo" secondAttribute="trailing" id="dCg-CQ-LfL"/>
+                                <constraint firstItem="Z5w-mZ-6N7" firstAttribute="width" secondItem="3Ps-XL-Y7l" secondAttribute="width" id="eps-ce-Dxb"/>
+                                <constraint firstItem="3Ps-XL-Y7l" firstAttribute="top" secondItem="NqE-Ol-jUt" secondAttribute="top" id="gEM-7b-CZD"/>
+                                <constraint firstItem="Z5w-mZ-6N7" firstAttribute="top" secondItem="NqE-Ol-jUt" secondAttribute="top" id="io8-D8-9lk"/>
+                                <constraint firstAttribute="bottom" secondItem="SRl-PV-YSo" secondAttribute="bottom" id="jGZ-9c-ZZe"/>
+                                <constraint firstItem="SRl-PV-YSo" firstAttribute="width" secondItem="3Ps-XL-Y7l" secondAttribute="width" id="jKw-fx-MN1"/>
+                                <constraint firstAttribute="bottom" secondItem="Z5w-mZ-6N7" secondAttribute="bottom" id="s97-nI-mpv"/>
+                                <constraint firstItem="3Ps-XL-Y7l" firstAttribute="leading" secondItem="NqE-Ol-jUt" secondAttribute="leading" id="tL8-Y3-Q1I"/>
+                                <constraint firstItem="SRl-PV-YSo" firstAttribute="leading" secondItem="Z5w-mZ-6N7" secondAttribute="trailing" constant="4" id="ygh-8D-UeP"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" width="45" id="J7g-E1-vbq">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CSa-S8-B90">
-                                <rect key="frame" x="481" y="-1" width="99" height="45"/>
+                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="-96" maxY="0.0"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="-40" maxY="0.0"/>
                                 <state key="normal" image="search_all"/>
                                 <state key="highlighted" image="search_all_h"/>
+                                <connections>
+                                    <action selector="tapSearchBarButtonItemAction:" destination="S52-18-vHx" eventType="touchUpInside" id="Exz-gJ-5cc"/>
+                                </connections>
                             </button>
                         </barButtonItem>
+                        <connections>
+                            <outlet property="leftBarButtonItem" destination="5cu-O2-BIR" id="OzZ-aK-t9o"/>
+                            <outlet property="rightBarButtonItem" destination="J7g-E1-vbq" id="uZF-0r-LiV"/>
+                        </connections>
                     </navigationItem>
+                    <connections>
+                        <outlet property="channelLabel" destination="Z5w-mZ-6N7" id="wP4-ER-4qb"/>
+                        <outlet property="discoverLabel" destination="SRl-PV-YSo" id="WFs-wj-EJY"/>
+                        <outlet property="myMusicLabel" destination="3Ps-XL-Y7l" id="AEU-6d-r8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srp-JY-g2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KiA-FL-cm7" userLabel="My Music Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="updateNavigationTitleViewStatus:" destination="S52-18-vHx" id="FfC-Hc-e7u"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ehK-iZ-Ffo" userLabel="Channel Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="updateNavigationTitleViewStatus:" destination="S52-18-vHx" id="yEE-hV-Rsc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6Ib-a9-UMi" userLabel="Discover Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="updateNavigationTitleViewStatus:" destination="S52-18-vHx" id="ThG-BL-6Rh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1180" y="137"/>
+            <point key="canvasLocation" x="1034" y="137"/>
         </scene>
         <!--Main Nav VC-->
         <scene sceneID="Ncg-oR-fqF">
