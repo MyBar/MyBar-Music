@@ -13,7 +13,6 @@
 + (instancetype)miniPlayerAlbumCoverView
 {
     MBMiniPlayerAlbumCoverView *miniPlayerAlbumCoverView = [[[NSBundle mainBundle] loadNibNamed:@"MBMiniPlayerAlbumCoverView" owner:nil options:nil] lastObject];
-    miniPlayerAlbumCoverView.backgroundColor = MBVC_BGCOLOR;
     
     miniPlayerAlbumCoverView.albumImageView.layer.cornerRadius = miniPlayerAlbumCoverView.albumImageView.width * 0.5;
     miniPlayerAlbumCoverView.albumImageView.layer.masksToBounds = YES;

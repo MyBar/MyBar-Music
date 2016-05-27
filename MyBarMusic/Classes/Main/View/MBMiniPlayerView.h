@@ -16,7 +16,21 @@
 #define MBPlaylistButtonHeight 40
 #define MBButtonMargin 8
 
+@class MBMiniPlayerView;
+
+@protocol MBMiniPlayerViewDelegate <NSObject>
+
+@optional
+- (void)miniPlayerView:(MBMiniPlayerView *)miniPlayerView didClickScrollView:(UIScrollView *)scrollView;
+- (void)miniPlayerView:(MBMiniPlayerView *)miniPlayerView didClickPlayOrPauseButton:(UIButton *)playOrPauseButton;
+- (void)miniPlayerView:(MBMiniPlayerView *)miniPlayerView didClickPlaylistButton:(UIButton *)playlistButton;
+
+@end
+
 @interface MBMiniPlayerView : UIView
+
+@property(assign, nonatomic, getter = isEnabled) BOOL enabled;
+@property (nonatomic, weak) id<MBMiniPlayerViewDelegate> delegate;
 
 + (MBMiniPlayerView *)shareMiniPlayerView;
 

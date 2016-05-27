@@ -26,8 +26,7 @@
     NSString *lastVersion = [standardUserDefaults valueForKeyPath:bundleVersionKey];
     
     if ([currentVersion isEqualToString:lastVersion]) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UINavigationController *mainNavVC = [storyboard instantiateViewControllerWithIdentifier:@"mainNavVC"];
+        UINavigationController *mainNavVC = [MBMainStoryboard instantiateViewControllerWithIdentifier:@"mainNavVC"];
         
         self.window.rootViewController = mainNavVC;
     } else {

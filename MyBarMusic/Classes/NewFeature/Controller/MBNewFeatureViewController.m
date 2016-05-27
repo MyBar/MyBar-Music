@@ -59,8 +59,7 @@
 }
 
 - (void)tapAction {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UINavigationController *mainNavVC = [storyboard instantiateViewControllerWithIdentifier:@"mainNavVC"];
+    UINavigationController *mainNavVC = [MBMainStoryboard instantiateViewControllerWithIdentifier:@"mainNavVC"];
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     window.rootViewController = mainNavVC;
 }

@@ -9,7 +9,13 @@
 #ifndef MyBarMusic_Prefix_pch
 #define MyBarMusic_Prefix_pch
 
+#import "UIViewController+Extension.h"
 #import "UIView+Extension.h"
+
+#define MBMainStoryboard ([UIStoryboard storyboardWithName:@"Main" bundle:nil])
+#define MBMyMusicStoryboard ([UIStoryboard storyboardWithName:@"MyMusic" bundle:nil])
+#define MBChannelStoryboard ([UIStoryboard storyboardWithName:@"Channel" bundle:nil])
+#define MBDiscoverStoryboard ([UIStoryboard storyboardWithName:@"Discover" bundle:nil])
 
 #define MBScreenWidth [UIScreen mainScreen].bounds.size.width
 #define MBScreenHeight [UIScreen mainScreen].bounds.size.height

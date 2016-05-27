@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MBMusic : NSObject
+@interface MBMusicInfo : NSObject
 
 //@property (nonatomic, strong) NSString *ID;           // 歌曲的id
 //@property (nonatomic, strong) NSString *title;        // 歌曲的名称
@@ -24,6 +24,6 @@
 @property (nonatomic, copy) NSString *artist;           // 歌曲的歌手
 @property (nonatomic, copy) NSString *albumName;        // 歌曲的专辑
 @property (nonatomic, strong) UIImage *artwork;         // 歌曲的图片
-@property (nonatomic, copy) NSString *path;             // 歌曲的路径
+@property (nonatomic, copy) NSString *urlStr;             // 歌曲的路径
 
 @end

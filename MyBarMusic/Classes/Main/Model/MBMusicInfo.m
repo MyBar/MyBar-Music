@@ -6,9 +6,9 @@
 //  Copyright © 2016年 MyBar. All rights reserved.
 //
 
-#import "MBMusic.h"
+#import "MBMusicInfo.h"
 
-@implementation MBMusic
+@implementation MBMusicInfo
 
 
 
