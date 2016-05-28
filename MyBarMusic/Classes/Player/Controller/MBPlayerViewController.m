@@ -10,15 +10,24 @@
 
 @interface MBPlayerViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel;
+@property (weak, nonatomic) IBOutlet UIButton *qualityButton;
+@property (weak, nonatomic) IBOutlet UIButton *copyrightButton;
+@property (weak, nonatomic) IBOutlet UIButton *mvButton;
+@property (weak, nonatomic) IBOutlet UIButton *dtsButton;
 @property (weak, nonatomic) IBOutlet UIImageView *albumCoverImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *albumCoverBackgroundImageView;
-
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *albumCoverImageViewLeadingConstraint;
-
-
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *lyricLabel;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UISlider *progressSlider;
 @property (weak, nonatomic) IBOutlet UILabel *currentTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playOrPauseButton;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *albumCoverImageViewLeadingConstraint;
+
 
 @end
 
@@ -31,7 +40,7 @@
     
     [self setupNavigation];
     [self initUI];
-    
+    [self setupScrollView];
     
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateCurrentTime) userInfo:nil repeats:YES];
 }
@@ -68,6 +77,31 @@
     [self.progressSlider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb"] forState:UIControlStateHighlighted];
     [self.progressSlider setMinimumTrackImage:[UIImage imageNamed:@"player_slider_playback_left"] forState:UIControlStateNormal];
     [self.progressSlider setMaximumTrackImage:[UIImage imageNamed:@"player_slider_playback_right"] forState:UIControlStateNormal];
+    
+}
+
+- (void)setupScrollView {
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    CGRect frame = self.view.bounds;
+    frame.origin.y = CGRectGetMaxY(self.navigationController.navigationBar.frame);
+    frame.size.height = frame.size.height - CGRectGetMaxY(self.navigationController.navigationBar.frame) - MBMiniPlayerViewHeight;
+    self.scrollView.frame = frame;
+    
+    CGFloat width = self.scrollView.width;
+    CGFloat height = self.scrollView.height;
+    
+    for (int i = 0; i < 3; i++) {
+        CGRect frame = CGRectMake(i * width, 0, width, height);
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:frame];
+        
+        NSString *imageName = [NSString stringWithFormat:@"Welcome_3.0_%d", i + 1];
+        imageView.image = [UIImage imageNamed:imageName];
+        
+        [self.scrollView addSubview:imageView];
+    }
+    
+    self.scrollView.contentSize = CGSizeMake(3 * width, height);
     
 }
 
