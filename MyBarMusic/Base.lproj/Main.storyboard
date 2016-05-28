@@ -305,7 +305,7 @@
                                         <rect key="frame" x="-19" y="-18" width="39" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="hb4-7Q-8uG"/>
-                                            <constraint firstAttribute="height" constant="21" id="qGe-6Q-ekI"/>
+                                            <constraint firstAttribute="height" constant="25" id="qGe-6Q-ekI"/>
                                         </constraints>
                                         <color key="pageIndicatorTintColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,7 +335,7 @@
                                     <constraint firstItem="ccC-KH-JkS" firstAttribute="leading" secondItem="Sid-Oq-cbv" secondAttribute="leading" id="K8r-O5-rz7"/>
                                     <constraint firstItem="Tl6-sN-R4K" firstAttribute="leading" secondItem="Sid-Oq-cbv" secondAttribute="leading" id="QbP-Zs-ZrB"/>
                                     <constraint firstItem="kdz-sV-oVZ" firstAttribute="leading" secondItem="Sid-Oq-cbv" secondAttribute="leading" constant="24" id="USy-x1-5ck"/>
-                                    <constraint firstItem="ccC-KH-JkS" firstAttribute="top" secondItem="Sid-Oq-cbv" secondAttribute="top" constant="8" id="WjA-4i-9ol"/>
+                                    <constraint firstItem="ccC-KH-JkS" firstAttribute="top" secondItem="Sid-Oq-cbv" secondAttribute="top" id="WjA-4i-9ol"/>
                                     <constraint firstAttribute="trailing" secondItem="c2e-4T-BwS" secondAttribute="trailing" constant="24" id="Xlc-Ms-ZdA"/>
                                     <constraint firstAttribute="trailing" secondItem="ccC-KH-JkS" secondAttribute="trailing" id="bFy-Bd-TlJ"/>
                                     <constraint firstItem="XMi-5F-3Jh" firstAttribute="top" secondItem="ccC-KH-JkS" secondAttribute="bottom" constant="8" id="eWn-XX-bja"/>
